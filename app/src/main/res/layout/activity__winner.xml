@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Activity_Winner"
+    android:background="@color/game_background"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:paddingBottom="40dp">
+
+
+
+        <TextView
+            android:id="@+id/winner_LBL_winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="You win!"
+            android:textAllCaps="true"
+            android:textColor="@color/winner_txt2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bungee_inline"></TextView>
+
+        <ImageView
+            android:id="@+id/winner_IMG_trophy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/img_winner"></ImageView>
+
+        <Button
+            android:id="@+id/winner_BTN_topTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="top 10"
+            android:backgroundTint="@color/buttonWinner"
+            android:fontFamily="@font/bungee"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/winner_LBL_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+
+            android:gravity="bottom"
+            android:text="Player 1"
+            android:textAllCaps="true"
+            android:textColor="@color/winner_txt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/denk_one"></TextView>
+
+        <ImageView
+            android:id="@+id/winner_IMG_winner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_player1"></ImageView>
+
+        <TextView
+            android:id="@+id/winner_LBL_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:fontFamily="@font/denk_one"
+            android:gravity="top"
+            android:text="score"
+            android:textColor="@color/winner_txt"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+</LinearLayout>
